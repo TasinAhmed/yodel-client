@@ -14,7 +14,7 @@ const App = () => {
   const userIdRef = useRef(null);
 
   const { sendJsonMessage, lastMessage, readyState } = useWebSocket(
-    "ws://localhost:8080"
+    "wss://yodel-server.onrender.com"
   );
 
   const urlHandler = (e) => {
